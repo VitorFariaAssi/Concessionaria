@@ -1,4 +1,4 @@
-from janela_prinicipal import Janela_Principal
+from janela_principal import Janela_Principal
 from bd_simulado import BD_Simulado
 
 #Classe Controle

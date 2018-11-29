@@ -1,5 +1,3 @@
-lista_carros=[]
-
 class Carro:
     def __init__(self, modelo, marca, ano, estado, preco, placa):
         self.modelo = modelo
@@ -11,12 +9,15 @@ class Carro:
         self.comprador = None
         self.vendedor = None
 
-    def venda(self, comp, vend):
-        self.comprador = comp
-        self.vendedor = vend
+    def venda(self, comprador, vendedor):
+        self.comprador = comprador
+        self.vendedor = vendedor
 
     def get_modelo(self):
         return self.modelo
+
+    def get_placa(self):
+        return self.placa
 
     def get_venda(self):
         return f'Comprador: {self.comprador.get_nome()} / Vendedor: {self.vendedor.get_nome()}'

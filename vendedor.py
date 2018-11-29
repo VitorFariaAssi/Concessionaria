@@ -1,10 +1,9 @@
 class Vendedor():
-    def __init__(self, nome, idade, cpf, matricula, sexo):
+    def __init__(self, nome, idade, cpf, matricula):
         self.nome = nome
         self.idade = idade
         self.cpf = cpf
         self.matricula = matricula
-        self.sexo = sexo
 
     def get_nome(self):
         return self.nome
