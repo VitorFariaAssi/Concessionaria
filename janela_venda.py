@@ -15,7 +15,7 @@ class Janela_Venda(Toplevel):
         l = 0
         c = 0
         for carro in self.controle.bd.carros:
-            self.botao_carro = Button(self, width=10, text=f'{carro.placa}').grid(row=l, column=c)
+            self.botao_carro = Button(self, width=10, textvariable=carro.placa).grid(row=l, column=c)
             c += 1
             if c == 3:
                 c = 0
